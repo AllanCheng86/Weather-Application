@@ -1,0 +1,118 @@
+
+ 
+/* Main Body of the web page */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+
+    background: #222;
+    background-image: url("https://source.unsplash.com/2560x1440/?landscape");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+/* The Title */
+#title{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 200px;
+    
+}
+
+/* Main Card in the center of the web page */
+.card{
+    background: #000000d0;
+    color:white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Search Bar and Button */
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Search Button */
+button{
+    margin:0.5em;
+    border-radius: 50%;
+    border:none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    background : #7c7c7c6b;
+}
+
+/* Current Temp */
+h1.temp{
+    margin: 0;
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color:white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+.col1{
+    display:inline-block;
+    position:relative;
+    left: 10px;
+}
+.col2{
+    display:inline-block;
+    position:relative;
+    left:30px;
+}
+.col3{
+    display:inline-block;
+    position:relative;
+    left:90px;
+}
+.city{
+    margin-bottom:0px;
+}
+.date{
+    margin: 0px;
+}
+
+
+/* Forecast Table  */
+.forecast{
+    position:relative;
+    padding-top: 40px;
+    
+
+}
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Error message when user enters an Invalid City Name */
+.errorMessage{
+    text-align: center;
+    color: red;
+}
